@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #e67e22; /* Orange */
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #e67e22;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #d35400;
+        }
+
+        .checkbox-group {
+            margin: 10px 0;
+        }
+
+        .checkbox-group input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Keyword Search</h1>
+        <form action="/search" method="post">
+            <label for="keyword">Enter a keyword to search:</label>
+            <input type="text" id="keyword" name="keyword" required>
+
+            <div class="checkbox-group">
+                <label>Choose the file types to search:</label><br>
+                <input type="checkbox" id="txt" name="file_types" value="txt" checked> <label for="txt">.txt</label><br>
+                <input type="checkbox" id="pdf" name="file_types" value="pdf"> <label for="pdf">.pdf</label><br>
+                <input type="checkbox" id="html" name="file_types" value="html" checked> <label for="html">.html</label><br>
+                <input type="checkbox" id="excel" name="file_types" value="excel"> <label for="excel">.xlsx</label><br>
+            </div>
+	<div class="checkbox-group">
+    		<label>Search options:</label><br>
+    		<input type="checkbox" id="regex" name="use_regex" value="true"> 
+    		<label for="regex">Use regular expressions</label><br>
+	</div>
+
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</body>
+</html>
+
