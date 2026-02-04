@@ -95,6 +95,12 @@ Avant toute transmission, une analyse de l'environnement radiofréquence a été
 
 Note : Les fichiers .mdr sont disponibles dans le dossier /measurements.
 
+<br>
+
+<p align="center"> <img src="img/connecter_infra.jpg" alt="Capture" width="900"> </p>
+
+<br>
+
 ### Phase 2 : Simulation et Modulation AM
 Découverte de GNU Radio via la création de signaux et l'analyse FFT.
 
@@ -113,9 +119,24 @@ Mise en œuvre d'un récepteur FM (88-108 MHz) via l'Adalm Pluto.
 ### Phase 4 : Émission/Réception Audio (Duplex)
 Communication vocale bidirectionnelle entre deux binômes.
 
+<br>
+
+<p align="center"> <img src="img/connecter_emetteur.png" alt="Capture d'écran Émission" width="900"> </p>
+
+<p align="center"> <img src="img/connecter_emetteur.png" alt="Capture d'écran Reception" width="900"> </p>
+
+<br>
+
+
 *  Technique : Modulation FM de la voix (48kHz) sur porteuse 2.4 GHz.
 *  Flux : Remplacement des blocs UDP par PlutoSDR Sink/Source.
 *  Résultat : Full Duplex fonctionnel vérifié par analyseur de spectre.
+
+<br>
+
+<p align="center"> <img src="img/connecter_videoufc.jpg" alt="Capture d'écran VLC" width="900"> </p>
+
+<br>
 
 ---
 
