@@ -192,7 +192,7 @@ Ce projet de sécurisation a été mené en plusieurs étapes successives, allan
 
 <br>
 
-<p align="center"> <img src="img/securiser_infra.jpg" alt="Capture d'écran du Proxmox" width="800"> </p>
+<p align="center"> <img src="img/securiser_infra.jpg" alt="Capture d'écran du Proxmox" width="900"> </p>
 
 <br>
 
@@ -205,7 +205,7 @@ Ce projet de sécurisation a été mené en plusieurs étapes successives, allan
  
 <br>
 
-<p align="center"> <img src="img/securiser_filtrage.jpg" alt="Capture d'écran du Proxmox" width="800"> </p>
+<p align="center"> <img src="img/securiser_filtrage.jpg" alt="Capture d'écran du Proxmox" width="900"> </p>
 
 <br>
 
@@ -218,7 +218,7 @@ Ce projet de sécurisation a été mené en plusieurs étapes successives, allan
 
 <br>
 
-<p align="center"> <img src="img/securiser_dns.jpg" alt="Capture d'écran du Proxmox" width="800"> </p>
+<p align="center"> <img src="img/securiser_dns.jpg" alt="Capture d'écran du Proxmox" width="900"> </p>
 
 <br>
 
@@ -232,7 +232,7 @@ Ce projet de sécurisation a été mené en plusieurs étapes successives, allan
  
 <br>
 
-<p align="center"> <img src="img/securiser_websecu.jpg" alt="Capture d'écran du Proxmox" width="800"> </p>
+<p align="center"> <img src="img/securiser_websecu.jpg" alt="Capture d'écran du Proxmox" width="900"> </p>
 
 <br>
 
@@ -245,7 +245,7 @@ Une fois l'infrastructure défensive en place, une phase offensive a été réal
 
 <br>
 
-<p align="center"> <img src="img/securiser_pentest.jpg" alt="Capture d'écran du Proxmox" width="800"> </p>
+<p align="center"> <img src="img/securiser_pentest.jpg" alt="Capture d'écran du Proxmox" width="900"> </p>
 
 <br>
 
