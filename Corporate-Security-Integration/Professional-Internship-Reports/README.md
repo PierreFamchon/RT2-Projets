@@ -210,11 +210,25 @@ Le projet s'est déroulé en trois phases majeures, transformant une infrastruct
 * Configuration du docker-compose pour orchestrer les différents services (Base de données PostgreSQL, Backend NetDisco, Interface Web).
 * Mise en place des réseaux virtuels Docker pour assurer une communication inter-conteneurs fluide et sécurisée.
 
+<br>
+
+<p align="center"> <img src="img/surveiller_docker.jpg" alt="Capture d'écran Docker" width="900"> </p>
+
+<br>
+
 ### Phase 2 : Découverte & Inventaire Brut (NetDisco)
 
 * Configuration des protocoles de découverte SNMP (v2c/v3) et LLDP pour scanner l'ensemble du parc informatique.
 * Lancement des tâches de "Discovery" pour remonter automatiquement la topologie réseau et les équipements connectés.
 * Génération d'un inventaire brut (Raw Data) contenant les adresses MAC, IPs, et les relations de voisinage entre les équipements.
+
+<br>
+
+<p align="center"> <img src="img/surveiller_netbox1.jpg" alt="Capture d'écran Netbox1" width="900"> </p>
+
+<p align="center"> <img src="img/surveiller_docker.jpg" alt="Capture d'écran Netbox2" width="900"> </p>
+
+<br>
 
 ### Phase 3 : Automatisation & Intégration (NetBox)
 
@@ -223,6 +237,14 @@ Le projet s'est déroulé en trois phases majeures, transformant une infrastruct
   * POST : Création automatique des nouveaux équipements s'ils n'existent pas.
   * PATCH : Mise à jour des équipements existants (modification de ports, changement d'IP) sans écraser les données manuelles critiques.
 * Interaction via l'API REST de NetBox pour peupler les objets structurés (Sites, Fabricants, Racks, Câblage).
+
+<br>
+
+<p align="center"> <img src="img/surveiller_docker.jpg" alt="Capture d'écran Netdisco1" width="900"> </p>
+
+<p align="center"> <img src="img/surveiller_docker.jpg" alt="Capture d'écran Netdisco2" width="900"> </p>
+
+<br>
 
 ---
 
