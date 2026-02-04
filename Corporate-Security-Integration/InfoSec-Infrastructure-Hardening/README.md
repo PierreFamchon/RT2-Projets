@@ -103,42 +103,42 @@ L'arborescence du projet est organisée comme suit :
 │   ├── 📊 Recommandation_Anssi_...xlsx    # Tableau de suivi de conformité
 │   └── 📄 Synthèse des recommandations.docx
 │
-├── 📂 Réseau/
-│   ├── 📂 Config maquette/
-│   │   ├── 📂 Brouillon/
-│   │   │   ├── 📄 Config.docx
-│   │   │   ├── 📄 Vrai brouillon.docx
-│   │   │   └── 🔌 test.pkt                # Test Packet Tracer
-│   │   │
-│   │   ├── 📂 ISO pour GNS3/
-│   │   │   └── 📄 ISO.docx
-│   │   │
-│   │   ├── 📂 Pare-Feu/
-│   │   │   └── 🔌 config-router.pkt       # Config Firewall Cisco
-│   │   │
-│   │   ├── 📂 Routeur/
-│   │   │   ├── 📄 commandes routeur.docx  # Mémo commandes
-│   │   │   ├── 📄 config routeur.docx     # Configuration appliquée
-│   │   │   └── 📄 router cisco.docx
-│   │   │
-│   │   └── 📂 Switch/
-│   │       ├── 📄 commandes switch.docx
-│   │       └── 📄 config switch.docx
-│   │
-│   ├── 📂 Services/
-│   │   ├── 📂 Serveur Web/
-│   │   │   ├── 📄 Rapport serveur web.docx
-│   │   │   └── 📄 Sécur web.docx          # Durcissement Nginx/Apache
-│   │   │
-│   │   └── 📂 Serveur Windows/
-│   │       └── 📄 Windows.docx            # Config DNS / AD
-│   │
-│   ├── 🔌 Maquettefinale.pkt              # Simulation finale Packet Tracer
-│   ├── 📄 README.md                       # Documentation du projet
-│   ├── 🔌 SansACL.pkt                     # Version sans filtrage
-│   ├── 📄 Write Up.docx                   # Rapport technique (Word)
-│   ├── 📄 Write Up.pdf                    # Rapport technique (PDF)
-│   └── 🔌 test.pkt                        # Fichier de test réseau
+└── 📂 Réseau/
+    ├── 📂 Config maquette/
+    │   ├── 📂 Brouillon/
+    │   │   ├── 📄 Config.docx
+    │   │   ├── 📄 Vrai brouillon.docx
+    │   │   └── 🔌 test.pkt                # Test Packet Tracer
+    │   │
+    │   ├── 📂 ISO pour GNS3/
+    │   │   └── 📄 ISO.docx
+    │   │
+    │   ├── 📂 Pare-Feu/
+    │   │   └── 🔌 config-router.pkt       # Config Firewall Cisco
+    │   │
+    │   ├── 📂 Routeur/
+    │   │   ├── 📄 commandes routeur.docx  # Mémo commandes
+    │   │   ├── 📄 config routeur.docx     # Configuration appliquée
+    │   │   └── 📄 router cisco.docx
+    │   │
+    │   └── 📂 Switch/
+    │       ├── 📄 commandes switch.docx
+    │       └── 📄 config switch.docx
+    │
+    ├── 📂 Services/
+    │   ├── 📂 Serveur Web/
+    │   │   ├── 📄 Rapport serveur web.docx
+    │   │   └── 📄 Sécur web.docx          # Durcissement Nginx/Apache
+    │   │
+    │   └── 📂 Serveur Windows/
+    │       └── 📄 Windows.docx            # Config DNS / AD
+    │
+    ├── 🔌 Maquettefinale.pkt              # Simulation finale Packet Tracer
+    ├── 📄 README.md                       # Documentation du projet
+    ├── 🔌 SansACL.pkt                     # Version sans filtrage
+    ├── 📄 Write Up.docx                   # Rapport technique (Word)
+    ├── 📄 Write Up.pdf                    # Rapport technique (PDF)
+    └── 🔌 test.pkt                        # Fichier de test réseau
 ```
 ---
 
@@ -190,12 +190,24 @@ Ce projet de sécurisation a été mené en plusieurs étapes successives, allan
   * VLAN Serveurs (DMZ)
   * VLAN Utilisateurs
 
+<br>
+
+<p align="center"> <img src="img/securiser_infra.jpg" alt="Capture d'écran du Proxmox" width="800"> </p>
+
+<br>
+
 ### Phase 2 : Mise en œuvre Réseau & Chiffrement
 
 * Configuration du routage dynamique OSPF avec authentification pour sécuriser les échanges de routes.
 * Déploiement des ACLs (Access Control Lists) sur les routeurs de bordure pour filtrer les flux illégitimes.
 * Mise en place d'un Tunnel GRE encapsulé dans IPsec :
   * Objectif : Interconnecter les sites distants tout en garantissant la confidentialité et l'intégrité des données transitant sur le WAN.
+ 
+<br>
+
+<p align="center"> <img src="img/securiser_filtrage.jpg" alt="Capture d'écran du Proxmox" width="800"> </p>
+
+<br>
 
 ### Phase 3 : Sécurisation de l'Infrastructure (DNS)
 
@@ -204,6 +216,12 @@ Ce projet de sécurisation a été mené en plusieurs étapes successives, allan
   * Signature cryptographique des zones DNS.
   * Objectif : Garantir l'authenticité des réponses et empêcher les attaques de type DNS Spoofing ou Cache Poisoning.
 
+<br>
+
+<p align="center"> <img src="img/securiser_dns.jpg" alt="Capture d'écran du Proxmox" width="800"> </p>
+
+<br>
+
 ### Phase 4 : Durcissement Web & Applicatif
 
 * Développement d'une application sécurisée en Python (Flask) (Validation des entrées, protection CSRF).
@@ -211,6 +229,12 @@ Ce projet de sécurisation a été mené en plusieurs étapes successives, allan
   * Masquage des versions du serveur.
   * Configuration TLS/SSL.
   * Filtrage des requêtes malveillantes (WAF basique).
+ 
+<br>
+
+<p align="center"> <img src="img/securiser_websecu.jpg" alt="Capture d'écran du Proxmox" width="800"> </p>
+
+<br>
 
 ### Phase 5 : Audit & Pentesting (Validation)
 Une fois l'infrastructure défensive en place, une phase offensive a été réalisée pour éprouver la sécurité :
@@ -218,6 +242,12 @@ Une fois l'infrastructure défensive en place, une phase offensive a été réal
 * Reconnaissance : Scans réseaux pour identifier les ports ouverts.
 * Exploitation : Tentatives d'intrusions simulées pour vérifier l'efficacité des ACLs, du DNSSEC et du durcissement Web.
 * Validation : Confirmation que les mesures de protection bloquent les vecteurs d'attaque identifiés.
+
+<br>
+
+<p align="center"> <img src="img/securiser_pentest.jpg" alt="Capture d'écran du Proxmox" width="800"> </p>
+
+<br>
 
 ---
 
