@@ -1,0 +1,125 @@
+/* Définition de couleurs principales */
+:root {
+    --primary-color: #FF7F00;  /* Orange */
+    --secondary-color: #ffffff;  /* Blanc */
+    --text-color: #333333;  /* Gris foncé pour le texte */
+    --border-color: #f0f0f0; /* Bordure gris clair */
+}
+
+/* Reset des marges et du padding pour tous les éléments */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style global du body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Style de l'en-tête */
+h1 {
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--primary-color);
+}
+
+/* Style du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style des labels et champs de texte */
+label {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+input[type="text"] {
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover pour le bouton */
+button:hover {
+    background-color: #e76c00;
+}
+
+/* Style des résultats de recherche */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+}
+
+strong {
+    color: var(--primary-color);
+}
+
+/* Style de la page de résultats */
+.results-container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results-container h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+a {
+    display: inline-block;
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e76c00;
+}

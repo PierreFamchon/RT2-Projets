@@ -1,0 +1,29 @@
+# deployment.yml - Configuration Netdisco
+
+database:
+  name: 'netdisco'
+  user: 'netdisco'
+  pass: 'netdisco'
+  #host: 'netdisco-postgresql'
+  port: xxx
+
+domain_suffix: 'localdomain'
+site_name: 'Réseau SNMP'
+
+device_auth:
+  - tag: 'snmpv3'
+    user: pierre
+    auth:
+      pass: xxx
+      proto: SHA
+    priv:
+      pass: xxx
+      proto: AES
+
+    
+# Pas d’authentification (utilisateur guest en admin)
+no_auth: true
+
+# Détection automatique
+discover_no:
+  - '127.0.0.1'
