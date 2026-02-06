@@ -224,9 +224,9 @@ Le projet s'est déroulé en trois phases majeures, transformant une infrastruct
 
 <br>
 
-<p align="center"> <img src="img/surveiller_netbox1.jpg" alt="Capture d'écran Netbox1" width="900"> </p>
+<p align="center"> <img src="img/surveiller_netdisco1.jpg" alt="Capture d'écran Netdisco1" width="900"> </p>
 
-<p align="center"> <img src="img/surveiller_netbox2.png" alt="Capture d'écran Netbox2" width="900"> </p>
+<p align="center"> <img src="img/surveiller_netdisco2.jpg" alt="Capture d'écran Netdisco2" width="900"> </p>
 
 <br>
 
@@ -240,9 +240,9 @@ Le projet s'est déroulé en trois phases majeures, transformant une infrastruct
 
 <br>
 
-<p align="center"> <img src="img/surveiller_netdisco1.jpg" alt="Capture d'écran Netdisco1" width="900"> </p>
+<p align="center"> <img src="img/surveiller_netbox1.jpg" alt="Capture d'écran Netbox1" width="900"> </p>
 
-<p align="center"> <img src="img/surveiller_netdisco2.jpg" alt="Capture d'écran Netdisco2" width="900"> </p>
+<p align="center"> <img src="img/surveiller_netbox2.png" alt="Capture d'écran Netbox2" width="900"> </p>
 
 <br>
 
