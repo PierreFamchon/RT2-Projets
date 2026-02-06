@@ -185,11 +185,6 @@ Cette SAE 3.02 a permis de mettre en pratique les compétences de programmation 
 ---
 
 ## 👥 Auteurs
-Projet réalisé par l'équipe :
-
-| Nom | Rôle |
-| :--- | :--- |
-| **Pierre Famchon** | Lead Network / Config Cisco |
-| **Michel Bauchart** | Services Windows / AD |
-| **Baptiste Duval** | Services Linux / Web |
-| **Nicolas Edouard** | Documentation / Tests |
+Projet réalisé par :
+* Pierre Famchon
+  * Étudiant BUT R&T (IUT Béthune)
